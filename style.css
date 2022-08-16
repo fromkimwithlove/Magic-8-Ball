@@ -1,0 +1,109 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	background: linear-gradient(to right bottom, black, gray);
+}
+
+.header {
+	margin: 1rem;
+	padding: 1rem;
+	font-size: 20px;
+	color: white;
+	text-shadow: 2px 2px 5px black;
+}
+.header h1 {
+	padding: 16px;
+}
+
+.header p {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 1.5rem;
+	margin: 15px;
+}
+
+input {
+	min-width: 75%;
+	margin: auto;
+	height: 2rem;
+	display: flex;
+	align-items: center;
+	border: none;
+}
+#outerball {
+	height: 25em;
+	width: 25em;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: black;
+	border-radius: 50%;
+	box-shadow: -15px -10px 20px rgba(255, 255, 255, 0.2);
+	position: relative;
+}
+.inner {
+	background-color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 10em;
+	width: 10em;
+	border-radius: 50%;
+	position: absolute;
+}
+.fortune {
+	color: black;
+	position: absolute;
+	font-size: 4rem;
+	margin-left: 4px;
+	word-wrap: break-word;
+	text-align: center;
+}
+button {
+	background-color: white;
+	padding: 1em;
+	min-width: 20%;
+	margin: 1.5em;
+	border-radius: 10px;
+	font-size: 16px;
+	line-height: 16px;
+}
+.shake {
+	animation-name: shake;
+	animation-timing-function: linear;
+	animation-duration: 0.8s;
+}
+
+@keyframes shake {
+	10%,
+	90% {
+		transform: translate3d(-1px, 0, 0);
+	}
+
+	20%,
+	80% {
+		transform: translate3d(2px, 0, 0);
+	}
+
+	30%,
+	50%,
+	70% {
+		transform: translate3d(-4px, 0, 0);
+	}
+
+	40%,
+	60% {
+		transform: translate3d(4px, 0, 0);
+	}
+}
